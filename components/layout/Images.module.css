@@ -1,0 +1,237 @@
+.imagesContainer {
+  display: flex;
+ /* Align items to the bottom */
+  margin-left: 600px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  /* position: absolute; */
+  top: 100;
+  right: 100;
+  
+}
+
+.imageWrapper {
+  position: relative;
+  margin-right: -5rem;
+  width: 350px;
+  height: 350px;
+  transition: transform 0.3s;
+}
+
+.imageWrapper1 {
+  z-index: 3;
+  transform: translateY(0);
+}
+
+.imageWrapper2 {
+  z-index: 2;
+  transform: translateY(-6rem);
+}
+
+.imageWrapper3 {
+  z-index: 1;
+  transform: translateY(-12rem);
+}
+
+.gifer {
+  width: 95%;
+  height: 98%;
+  border-radius: 50px;
+  object-fit: fill;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(63, 59, 59);
+}
+
+.myscreen{
+  width: 600px;
+  height: 620px;
+  border-radius:50px;
+  object-fit: fill;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(63, 59, 59);
+  box-shadow: black;
+}
+
+.myblack{
+  width: 60%;
+  height: 40%;
+  border-radius: 100px;
+  object-fit: fill;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(63, 59, 59);
+  box-shadow: 0px 0px 8px rgb(154, 22, 194);
+}
+.myblackui {
+  width: 50%;
+  height: 40%;
+  border-radius: 100px;
+  object-fit: fill;
+  border: 1px solid rgba(134,57,129,255);
+  box-shadow: 0px 0px 25px rgb(154, 22, 194); /* Adjust values as needed */
+}
+
+.myblacko{
+  width: 70%;
+  height: 50%;
+  border-radius: 100px;
+  object-fit: fill;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(63, 59, 59);
+  box-shadow: 0px 0px 30px rgb(154, 22, 194);
+}
+.myblackt{
+  width: 80%;
+  height: 60%;
+  border-radius: 100px;
+  object-fit: fill;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(63, 59, 59);
+  box-shadow: 0px 0px 100px rgb(154, 22, 194);
+}
+.myblackf{
+  width: 90%;
+  height: 70%;
+  border-radius: 100px;
+  object-fit: fill;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(63, 59, 59);
+  box-shadow: 0px 0px 120px rgb(154, 22, 194);
+}
+.myblackfini{
+  width: 98%;
+  height: 86%;
+  border-radius: 50px;
+  object-fit: fill;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(63, 59, 59);
+  box-shadow: 0px 0px 100px rgb(154, 22, 194);
+  z-index: 0;
+}
+
+.parent {
+  /* Define the desired height for the parent container */
+  height: 90vh; /* 90% of the viewport height */
+}
+
+
+.image {
+  width: 20%;
+  height: 30%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  
+}
+
+.card-body {
+  padding: 16px;
+  width: 20%;
+  height: 30%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.glass:hover {
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  
+  
+}
+
+.glass-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.gradientBlur {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  /* Other styles */
+  transition: transform 0.5s ease;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+
+/* Style the front side (fallback if image is missing) */
+.flipcardfront {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.card-inner {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
